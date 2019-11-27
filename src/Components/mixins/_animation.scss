@@ -1,0 +1,116 @@
+@mixin animation($animation-name , $duration , $speed){
+
+    //webkit
+  
+    -webkit-animation-duration: $duration;
+    -webkit-animation-timing-function: $speed;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-name: $animation-name;
+    
+    //moz
+
+    -moz-animation-duration: $duration;
+    -moz-animation-timing-function: $speed;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-name: $animation-name;   
+
+    //opera
+
+    -o-animation-duration: $duration;
+    -o-animation-timing-function: $speed;
+    -o-animation-fill-mode: forwards;
+    -o-animation-name: $animation-name;  
+
+    
+    animation-duration: $duration;
+    animation-name: $animation-name;
+    animation-timing-function: $speed;
+    animation-fill-mode: forwards;
+
+}
+
+//keyframes
+
+@mixin keyframe ($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+//all effects 
+@include keyframe(anim) {
+    to {
+        width: 100%;
+    }
+}
+@include keyframe(letter-anim) {
+    from {
+        letter-spacing: -17px;
+    }
+    to {
+        letter-spacing: initial;
+    }
+}
+
+@include keyframe(letteranim) {
+    from {
+        letter-spacing: -5px;
+        opacity: 0;
+    }
+    to {
+        letter-spacing: initial;
+        opacity: 1;
+    }
+}
+
+
+@include keyframe(fadeupto) {
+    from {
+        transform: translate(0px, 16px);
+        opacity: 0.6;
+    }
+    to {
+        transform: translate(0, -1px);
+        opacity: 1;
+    }
+}
+
+@include keyframe(wave){
+    0% {
+        transform: translate(0px,-15px);
+    }
+   
+    50% {
+        transform: translate(0px,0px);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(0px,-15px);
+    }
+}
+
+@include keyframe(wave2){
+    0% {
+        transform: translate(0px,0px);
+    }
+    50% {
+        transform: translate(0px,-15px);
+    }
+    100% {
+        transform: translate(0px,0px);
+    }
+}
+
+

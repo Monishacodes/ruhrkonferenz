@@ -1,0 +1,72 @@
+
+//Themee color that are using throughout the website
+
+//basic colors
+$white:#fff !default;
+$black:#000 !default;
+$red: red !default;
+
+
+//gray colors
+
+$gray-100:#f9f9f9!default;
+$gray-200 : #F0F0F0 !default;
+$gray-300: #DADADA !default;
+$gray-800 :#707070 !default;
+$gray-900 :#99999A !default;
+
+$dark-gray:#666 !default;
+$light-gray: #ccc !default;
+
+//theme colors
+
+$orange-100 : #F9F3EA;
+$orange-200: #FFBE0C !default;
+$orange-300: #FAC600 !default;
+$orange-400: #F29400 !default;
+$orange-500: #eb7d4b !default;
+$orange-900:#C57901 !default;;
+$orange-grad: linear-gradient(-218deg, $orange-300 0%, $orange-400 100%);
+
+$blue-100: #66C5EC !default;
+$blue-200:#1DADEB !default;
+$blue-300:#425EAC !default;
+$blue-400 :#009FE3 !default;
+$blue-500: #2F5B6C !default;
+$blue-900:#264956 !default;
+
+
+
+//overlay color with opacity
+
+$overlay-100:rgba(86,86,86,0.3);
+$overlay-200:rgba(255, 255, 255, 0.2);
+$overlay-300:rgba(0, 0, 0, 0.2);
+
+
+
+// $orange: #eb7d4b !default;
+// $dark-orange :#C57901 !default;
+
+
+// //text colors
+// $text-orange:#F29400 !default;
+// $text-orange-light : #FFBE0C !default;
+// $text-black:#1A1A1A !default;
+
+// // Site colots
+// $sky-blue :#009FE3 !default;
+$sky-blue-100 :#66C5EC !default;
+
+
+$light-blue:#30bae7 !default;
+$purple :#87509c !default;
+$blue : #3c5499 !default;
+$border-orange:#c86a40 !default;
+$border-lightblue:#299ec5 !default;
+$dark-text: #474b53 !default;
+
+$footer-bg:#2F5B6C !default;
+//article img background colors
+
+

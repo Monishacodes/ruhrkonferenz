@@ -1,0 +1,106 @@
+.slider {
+    margin-bottom: 0 !important;
+    img {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+
+        @media screen and (max-width:767px){
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+    &-image{ 
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: radial-gradient(transparent 15%, transparent 5%, $orange-500 60%);
+            // background:  rgba(0,0,0,0.3);
+            opacity: 0.4;
+           
+        }
+    }
+
+    &-content {
+        margin: auto;
+        position: absolute;
+        top: 190px;
+        color: $white;
+        padding-left: 58px;
+        animation:  slideit 0.7s ease-in-out forwards;
+
+        @media screen and (max-width:767px) {
+            position: inherit;
+            color: $black;
+            padding: 20px 40px 30px;
+            font-family: BentonSans-Medium;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            padding-left: 0;
+        }
+        
+        h1 {
+            font-family: BentonSans-Bold;
+            @include typi('h1-text');
+            margin: 0;
+            padding: 8px 0;
+            animation: letteranim 2s ease-in-out forwards;
+            animation-delay: 0.4s;
+            opacity: 0;
+
+            span {
+                font-family: BentonSans-Regular;
+                text-transform: lowercase;
+            }
+        }
+        p {
+            @include typi('slider-text');
+            margin: 0;
+            padding: 3px 0 27px 0;
+        }
+    }
+    .slick {
+        &-slider {
+            cursor: grab;
+
+            &:focus {
+                outline: none;
+            }
+        }        
+
+        &-dots {
+            display: none;
+
+            @media screen and (max-width:767px) {
+                display: block;
+                position: absolute;
+                bottom: 56%;
+                z-index: 88;
+                opacity: 1;
+                left: 6%;
+                height: auto;
+                text-align: left;
+                width: auto;
+
+                li {
+                    margin: 0 4px;
+                    button {
+                        &:before {
+                            font-size: calc(2 * 36);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

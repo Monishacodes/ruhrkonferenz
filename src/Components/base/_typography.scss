@@ -1,0 +1,163 @@
+//different font size 
+//bold
+@font-face {
+	font-family: "BentonSans-Bold";
+	src: url("../fonts/BentonSans-Bold.eot");
+	src: url("../fonts/BentonSans-Bold.eot?") format("embedded-opentype"),
+		url("../fonts/BentonSans-Bold.woff") format("woff"),
+		url("../fonts/BentonSans-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+//medium
+@font-face {
+	font-family: "BentonSans-Medium";
+	src: url("../fonts/BentonSans-Medium.eot");
+	src: url("../fonts/BentonSans-Medium.eot?") format("embedded-opentype"),
+		url("../fonts/BentonSans-Medium.woff") format("woff"),
+		url("../fonts/BentonSans-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+//regular
+@font-face {
+	font-family: "BentonSans-Regular";
+	src: url("../fonts/BentonSans-Regular.eot");
+	src: url("../fonts/BentonSans-Regular.eot?") format("embedded-opentype"),
+		url("../fonts/BentonSans-Regular.woff") format("woff"),
+		url("../fonts/BentonSans-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+//font small 
+// $f-sxtra :10px;
+// $f-xsmall : 14px;
+// $f-small: 16px;
+// $f-xsmedium: 20px;
+// $f-smedium:24px;
+// $f-lmedium:28px;
+// $f-xslarge:30px;
+// $f-smlarge:36px;
+// $f-mlarge:42px;
+// $f-llarge: 48px;
+// $f-lxtra:64px;
+
+
+//typi
+
+$breakpoints: (Tablet: 600px,
+	Desktop: 1200px);
+
+
+$typi: (
+	base: (
+		null: 16px,
+		Tablet: 16px,
+		Desktop: 16px),
+
+	h1-text: (
+		null: (30px, 36px),
+		Tablet: (30px, 36px),
+		Desktop: (48px, 48px)),
+
+	h-large:  (
+		null: (64px, 46px),
+		Tablet: (50px, 46px),
+		Desktop: (64px, 46px)),
+
+	header-nav:  (
+		null: (20px, 24px),
+		Tablet: (20px, 24px),
+		Desktop: (14px, 17px)),
+	
+	header-nav-drop:  (
+		null: (16px, 19px),
+		Tablet: (16px, 19px),
+		Desktop: (14px, 17px)),
+
+	search-input:	(
+		null: (24px, 29px),
+		Tablet: (30px, 36px),
+		Desktop: (30px, 36px)),
+		
+	search-p:	(
+		null: (14px, 17px),
+		// Tablet: (16px, 19px),
+		Desktop: (16px, 19px)),
+	
+	slider-text: (
+		null: (14px, 20px),
+		Tablet: (14px, 20px),
+		Desktop: (14px, 20px)),
+
+	slider-button:(
+		null: (16px, 19px),
+		Tablet: (16px, 19px),
+		Desktop: (12px, 16px)),
+
+	step-span:	(
+		null: (14px),
+		Tablet: (16px),
+		Desktop: (16px)), 
+
+	step-header:	(
+		null: (28px, 30px),
+		Tablet: (28px, 46px),
+		Desktop: (28px, 46px)), 
+
+	step-number:	(
+		null: (36px,1.7),
+		Tablet: (24px,46px),
+		Desktop: (28px,46px)),
+
+	box-p1-text:  (
+		null: (16px, 24px),
+		Tablet: (16px, 24px),
+		Desktop: (16px, 24px)), 
+	
+	box-h1-text:  (
+		null: (42px, 46px),
+		Tablet: (36px, 40px),
+		Desktop: (42px, 46px)), 
+
+	box-h2-text:  (
+		null: (24px, 28px),
+		Tablet: (17px, 20px),
+		Desktop: (24px, 28px)),
+	
+	box-h3-text:  (
+		null: (36px, 38px),
+		Tablet: (30px, 36px),
+		Desktop: (36px, 38px)),
+
+	box-button:(
+		null: (16px, 19px),
+		Tablet: (16px, 19px),
+		Desktop: (16px, 19px)),
+
+	box-span:(
+		null: (14px, 28px),
+		Tablet: (14px, 16px),
+		Desktop: (14px, 28px)),
+
+	box-p2-text:  (
+		null: (20px, 28px),
+		Tablet: (15.5px, 20px),
+		Desktop: (20px, 28px)),
+
+	box-p3-text:  (
+		null: (16px, 20px),
+		Tablet: (14px, 18px),
+		Desktop: (16px, 20px)),
+	
+	box-p4-text:  (
+		null: (20px, 20px),
+		Tablet: (20px, 20px),
+		Desktop: (20px, 20px)),
+	
+	footer-nav:	 (
+		null: (9px, 10px),
+		Tablet: (10px, 12px),
+		Desktop: (10px, 12px)),
+	);

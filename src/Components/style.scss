@@ -1,0 +1,71 @@
+
+//Config files
+@import 'plugins/typi/scss/typi';
+
+@import 'base/variable';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/common';
+@import 'base/reset';
+
+@import 'functions/functions';
+@import 'mixins/animation';
+@import 'mixins/border';
+@import 'mixins/transition';
+
+
+//@import 'base/variable';
+// @import 'base/typography';
+// @import 'base/mixins';
+//@import 'base/common';
+//@import 'base/animation';
+// @import 'atoms/navlist';
+
+//layout
+@import 'layout/responsive';
+@import 'layout/grid';
+@import 'atoms/button';
+
+
+
+@import 'atoms/icons';
+@import 'atoms/navlinks';
+@import 'atoms/socialicons';
+
+
+@import 'molecules/navbar/headerright';
+@import 'molecules/navbar/headernav';
+@import 'molecules/navbar/footernav';
+@import 'molecules/step';
+@import 'molecules/box';
+@import 'molecules/navbar/mobnav';
+
+
+
+@import 'molecules/sinput';
+
+
+
+@import 'organisms/loader';
+@import 'organisms/mainnav';
+@import 'organisms/stepsection';
+@import 'organisms/content';
+
+@import 'organisms/header';
+// @import 'organisms/menubar';
+@import 'organisms/slider';
+@import 'organisms/cardsmain';
+@import 'organisms/footer';
+
+
+
+//Components
+// @import 'Components/search';
+// @import 'Components/burgermenu';
+// @import 'Components/contact';
+// @import 'Components/header';
+// @import 'Components/button';
+// @import 'Components/slider';
+// @import 'Components/article';
+// @import 'Components/thankyou';
+// @import 'Components/footer';

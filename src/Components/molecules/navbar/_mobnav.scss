@@ -1,0 +1,116 @@
+.collapse {
+    // &.open {
+    //     display: block;
+    // }
+
+    @media screen and (max-width:1024px) {
+        display: none;
+
+        &.active-menu {
+            display: block;
+            height: 100vh;
+
+            .navigation {
+                padding-top: 12px;
+
+                ul {
+                    &.horizontal {
+                        display: block;
+
+                        li {
+                            display: block;
+                            background: $gray-200;
+                            margin-bottom: 10px;
+                            padding: 0;
+                            position: relative;
+                            font-family: BentonSans-Medium;
+
+                            &:hover,
+                            &:focus {
+                                background: $orange-400;
+
+                                a {
+                                    border: none;
+                                    color: $white;
+                                }
+
+                                .dropdown-content1 {
+                                    border: none;
+                                    box-shadow: none;
+                                    width: 100%;
+
+                                    li {
+                                        margin: 0;
+                                        background: $orange-100;
+
+                                        &:not(last-child) {
+                                            border-bottom: 1px solid $orange-400;
+                                        }
+
+                                        a {
+                                            color: $orange-400;
+                                        }
+
+                                        &:hover,
+                                        &:focus {
+                                            a {
+                                                color: $white;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                span {
+                                    background: $orange-900;
+
+                                    img {
+                                        transform: rotate(0deg);
+                                        @include transition(all, 0.4s, ease, 0s);
+                                    }
+                                }
+
+                            }
+
+                            .dropdown-content1 {
+                                position: inherit;
+                               
+
+                                li {
+                                    padding: 0;
+                                }
+                                &.open {
+                                    display: block;
+                                    
+                                    span {
+                                        img {
+                                            transform: rotate(45deg);
+                                        }
+                                    }
+                                }
+                            }
+
+                            a {
+                                display: block;
+                                padding: 12px 20px;
+                                border-top: none;
+                            }
+
+                            span {
+                                display: block;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                background: $gray-300;
+                                padding: 15px;
+
+                                img {
+                                    transform: rotate(45deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

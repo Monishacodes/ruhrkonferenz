@@ -1,0 +1,59 @@
+// .drop {
+// 	position: relative;
+
+// 	&:hover {
+// 		&::after {
+// 			content: "";
+// 			position: absolute;
+// 			left: 37%;
+// 			bottom: -12px;
+// 			z-index: 9999;
+// 			border-left: 12px solid transparent;
+// 			border-right: 12px solid transparent;
+// 			border-top: 12px solid $overlay-300;
+// 		}
+// 	}
+
+// 	&down-content {
+// 		display: none;
+// 		position: fixed;
+// 		background-color: $gray-100;
+// 		height: 100vh;
+// 		left: 0;
+// 		padding-right: -17px;
+// 		right: 17px;
+// 		margin-top: 12px;
+// 		box-shadow: 0px 8px 16px 0px $overlay-300;
+// 		z-index: 1;
+// 	}
+
+// 	&-wrapper {
+// 		background: url('https://demo.accesspressthemes.com/wordpress-plugins/wp-mega-menu-pro/wp-content/uploads/2016/12/2016-12-11-1.jpg') no-repeat;
+// 		background-position: right;
+// 		width: 100%;
+// 		height: 100%;
+// 		background-size: 100% 86%;
+// 		text-align: left;
+
+// 		a {
+// 			display: block;
+// 			padding: 12px 0;
+// 			font-size: 18px !important;
+
+// 			&:hover {
+// 				color: $orange-500 !important;
+// 			}
+// 		}
+
+// 		.header {
+// 			background: $white;
+// 			padding: 16px;
+// 			color: $black;
+// 		}
+
+// 		h3 {
+// 			font-size: 20px;
+// 		}
+// 	}
+
+// }

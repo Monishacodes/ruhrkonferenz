@@ -1,0 +1,42 @@
+.mobile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 7px;
+
+    @media screen and (max-width:1024px){
+        display: block;
+        padding: 20px 15px;
+    }
+  
+    .icon {
+        // position: relative;
+        // transform-origin: 4px 0px;
+        float: right;
+        text-align: right;
+        
+        &.rotate {
+            .middle {
+                display: none;
+            }
+            .bottom {
+                transform: rotate(-45deg);
+                @include transition(all, 0.4s, ease, 0s );
+            }
+            .upper {
+                transform: rotate(45deg) translate(6px, 7px);
+                @include transition(all, 0.4s, ease, 0s );
+            }
+        }
+    
+        &-bar {
+            height: 4px;
+            background: $gray-800;
+            width: 30px;
+            display: block;
+            margin-bottom: 5px;
+            @include border-radius(3px);
+            @include transition(all, 0.4s, ease, 0s );
+        }    
+    }
+}

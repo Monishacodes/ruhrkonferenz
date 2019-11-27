@@ -1,0 +1,28 @@
+.social-links {
+    padding: 90px 0 5px;
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
+    span {
+        line-height: 2.2;
+        margin-right: 10px;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        cursor: pointer;
+
+        @media screen and (max-width:767px) {
+            padding: 12px;
+        }
+        &.fb {
+            background: $blue-300;            
+        }
+        &.tw {
+            background: $blue-200;
+        }
+        img {
+            height: 15px;
+        }
+    }
+}

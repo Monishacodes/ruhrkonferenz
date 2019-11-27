@@ -1,0 +1,114 @@
+.progressbar {
+    counter-reset: step;
+
+    li {
+        list-style: none;
+        display: inline-block;
+        width: 30.33%;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        color: $gray-900;
+
+        @media screen and (max-width:767px){
+            display: block;
+            width: 100%;
+        }
+
+        &:before {
+            content: counter(step);
+            counter-increment: step;
+            width: 46px;
+            height: 46px;
+
+            @include typi('step-number');
+            // line-height: 2;
+            border: 3px solid $gray-900;
+            border-radius: 100%;
+            display: block;
+            text-align: center;
+            margin: 0 auto 20px auto;
+            background-color: $white;
+            z-index: 2;
+
+            @media screen and (max-width:767px){
+               border: none;
+               margin: 0 auto 14px auto;
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 84%;
+            height: 3px;
+            background-color: $gray-900;
+            top: 25px;
+            left: -42.3%;
+            z-index: 1;
+
+            @media screen and (max-width:767px){
+                display: none;
+            }
+
+            @media screen  and (min-width:768px ) and (max-width:1024px){
+                width: 79%;
+                left: -40.3%;
+            }
+        }
+
+        .active {
+            color: $orange-400;
+        
+            &:before {
+                border-color: $orange-400;
+
+                
+            }
+        }
+        span {
+            color: $black;
+            @include typi('step-span');
+            &:first-child {
+                font-family:BentonSans-Bold;
+
+            }
+            
+        }
+        .active + li:after {
+            background-color: $orange-400;
+        }
+
+        &:first-child {
+            &:after {
+                content: none;
+            }
+        }
+
+        &.active {
+            color: $orange-400;
+            
+            span {
+                &:first-child {
+                    font-family:BentonSans-Bold;
+                }
+            }
+            &:before {
+                border: 3px solid $orange-400;
+                font-family:BentonSans-Bold;
+                @media screen and (max-width:767px){
+                    border: none;
+                    background: -webkit-linear-gradient(#F9C142,#F29400);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                   
+                 }
+            }
+
+            &:after {
+                background-color:$orange-400;
+            }
+        }
+    }
+}
+
